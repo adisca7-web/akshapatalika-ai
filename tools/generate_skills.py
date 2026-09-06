@@ -1,4 +1,4 @@
-"""Generate the wiley-gaap agent skill pack from the segmented book.
+"""Generate the GaapAccounting agent skill pack from the segmented book.
 
 Each Wiley chapter opens with a hierarchical contents outline and then repeats
 those headings over the body. That structure is the skill hierarchy: the chapter
@@ -29,7 +29,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SEG = ROOT / "extraction" / "segments"
-OUT = ROOT / "skills" / "wiley-gaap"
+OUT = ROOT / "skills" / "gaap-accounting"
 
 CITATION = re.compile(r"\bASC\s+(\d{3})-(\d{2})(?:-(\d{2}))?(?:-(\d{1,3}[A-Za-z]?))?")
 ASU = re.compile(r"\bASU\s+(\d{4}-\d{2})\b")

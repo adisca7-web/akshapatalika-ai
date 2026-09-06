@@ -491,7 +491,7 @@ PROFILES: Dict[str, IndustryProfile] = {
 
 # ---------------------------------------------------------------------------
 # Row-level rules, derived from the anti-pattern and decision-rule sections of
-# the industry files in skills/wiley-gaap/industries/.
+# the industry files in skills/gaap-accounting/industries/.
 #
 # These were written as prose in the reference pack first and executed nowhere,
 # which is exactly how the gift-card miss happened: the rule existed, the agent

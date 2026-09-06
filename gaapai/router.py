@@ -4,7 +4,7 @@ Two catalogs are searched, and they answer different questions:
 
 * the **deterministic registry** (``gaapai.skills``) answers *compute this* --
   it returns callable subskills with exact arithmetic and ASC citations;
-* the **reference pack** (``skills/wiley-gaap``) answers *what does the standard
+* the **reference pack** (``skills/gaap-accounting``) answers *what does the standard
   require* -- it returns chapter and industry files distilled from Wiley GAAP.
 
 Routing is lexical and deterministic on purpose. A model can paraphrase a
@@ -40,11 +40,11 @@ _STOP = {
 
 
 def default_pack_path() -> Optional[Path]:
-    """Locate the wiley-gaap reference pack, project copy first."""
+    """Locate the GaapAccounting reference pack, project copy first."""
     candidates = [
-        Path(__file__).resolve().parent.parent / "skills" / "wiley-gaap",
-        Path.home() / ".claude" / "skills" / "wiley-gaap",
-        Path.home() / ".agents" / "skills" / "wiley-gaap",
+        Path(__file__).resolve().parent.parent / "skills" / "gaap-accounting",
+        Path.home() / ".claude" / "skills" / "gaap-accounting",
+        Path.home() / ".agents" / "skills" / "gaap-accounting",
     ]
     for c in candidates:
         if (c / "_index.json").exists() or (c / "SKILL.md").exists():

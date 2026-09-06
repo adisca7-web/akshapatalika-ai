@@ -9,7 +9,7 @@ an optional model that plans calculations the engine then performs.
 > reference pack distilled from *Wiley GAAP 2020* (64 ASC topic chapters, 20
 > specialized industry regimes). That pack is a derivative of a copyrighted book, so
 > it is not redistributed here. Everything else runs without it; industry lookups
-> return nothing until a pack is installed at `~/.claude/skills/wiley-gaap`.
+> return nothing until a pack is installed at `~/.claude/skills/gaap-accounting`.
 > See [Reference pack](#reference-pack).
 
 ```
@@ -97,7 +97,7 @@ gaapai/                     the deterministic kernel (stdlib only)
 
 devapp/app.py               Streamlit harness: Overview, Ask, Review, Details
 
-skills/wiley-gaap/          reference pack (NOT in this repo -- see below)
+skills/gaap-accounting/          reference pack (NOT in this repo -- see below)
 tools/                      book extraction and skill generation
 extraction/                 segmented source (gitignored: copyrighted)
 tests/                      337 tests
@@ -153,7 +153,7 @@ text reproduced — but it remains a derivative of a copyrighted work, so publis
 would be redistribution.
 
 `tools/segment_book.py` and `tools/generate_skills.py` build it from a copy of the
-book you own. Install the result at `~/.claude/skills/wiley-gaap`, where
+book you own. Install the result at `~/.claude/skills/gaap-accounting`, where
 `gaapai.router.default_pack_path()` finds it. Without a pack the kernel, semantics,
 question engine, planner and diagrams all work unchanged; only industry reference
 lookups come back empty.
