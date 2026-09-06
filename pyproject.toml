@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gaapai"
+version = "0.1.0"
+description = "A deterministic US GAAP layer for conversational financial analysis, with a reference skill pack distilled from Wiley GAAP 2020."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+
+# The kernel is deliberately dependency-free: exact decimal money, ASC
+# citations, workpapers, and routing all run on the standard library. That is
+# what lets it run on any interpreter, including ones PandasAI cannot support.
+dependencies = []
+
+[project.optional-dependencies]
+# Charts and DataFrame adapters.
+data = ["pandas>=2.0", "matplotlib>=3.7"]
+# PandasAI 3.0 pins python >=3.8,<3.12, so this extra only resolves on a
+# suitable interpreter. Install it in a dedicated 3.11 environment.
+pandasai = ["pandasai>=3.0.0"]
+dev = ["pytest>=7.0"]
+
+[tool.setuptools.packages.find]
+include = ["gaapai*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
