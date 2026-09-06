@@ -5,12 +5,9 @@ accounting computations that carry their ASC citation, a semantic layer that dec
 which column means revenue in a given industry, a plain-English question engine, and
 an optional model that plans calculations the engine then performs.
 
-> **The reference pack is not in this repository.** The router can draw on a
-> reference pack distilled from *Wiley GAAP 2020* (64 ASC topic chapters, 20
-> specialized industry regimes). That pack is a derivative of a copyrighted book, so
-> it is not redistributed here. Everything else runs without it; industry lookups
-> return nothing until a pack is installed at `~/.claude/skills/gaap-accounting`.
-> See [Reference pack](#reference-pack).
+It ships with the **GaapAccounting** reference pack — 64 ASC topic chapters and 20
+specialized industry regimes — which the router consults for what a standard
+requires. See [Reference pack](#reference-pack) for its provenance.
 
 ```
 question ──► router ──► deterministic subskill ──► workpaper ──► diagram
@@ -97,7 +94,11 @@ gaapai/                     the deterministic kernel (stdlib only)
 
 devapp/app.py               Streamlit harness: Overview, Ask, Review, Details
 
-skills/gaap-accounting/          reference pack (NOT in this repo -- see below)
+skills/gaap-accounting/     GaapAccounting reference pack
+  SKILL.md                  index, cross-cutting mechanisms, topic routing
+  chapters/    64 ASC topic files
+  industries/  20 fully written industry regimes
+  cheatsheet.md  glossary.md  patterns.md
 tools/                      book extraction and skill generation
 extraction/                 segmented source (gitignored: copyrighted)
 tests/                      337 tests
@@ -133,7 +134,7 @@ print(mermaid.allocation_diagram(r))
 
 ## The reference pack
 
-Built with [book-to-skill](https://github.com/virgiliojr94/book-to-skill) from *Wiley GAAP 2020* (2,286 pages, 610K words). The extractor recovered 64 chapters, 20 industry sections, and 2 appendices; the 20 industry files were then written out in full — scope, core model, subskills, decision-rule tables, thresholds, anti-patterns, and ASC references.
+Built with [book-to-skill](https://github.com/virgiliojr94/book-to-skill) from *Wiley GAAP 2020* (see [provenance](#reference-pack)) (2,286 pages, 610K words). The extractor recovered 64 chapters, 20 industry sections, and 2 appendices; the 20 industry files were then written out in full — scope, core model, subskills, decision-rule tables, thresholds, anti-patterns, and ASC references.
 
 | | |
 |---|---|
@@ -145,18 +146,36 @@ Built with [book-to-skill](https://github.com/virgiliojr94/book-to-skill) from *
 Industries covered: federal government contractors, broadcasters, cable television, casinos, film, music, oil and gas, depository and lending, insurance, investment companies, mortgage banking, title plant, franchisors, not-for-profit, plan accounting, real estate general, retail land, time-sharing, regulated operations, software.
 
 <a name="reference-pack"></a>
-### Reference pack
+### Reference pack — provenance
 
-The pack is **not distributed with this repository**. It is synthesised rather than
-copied — structure, decision rules and citations in original wording, with no book
-text reproduced — but it remains a derivative of a copyrighted work, so publishing it
-would be redistribution.
+The **GaapAccounting** pack was distilled from *Wiley GAAP 2020 — Interpretation and
+Application of Generally Accepted Accounting Principles* by `tools/segment_book.py`
+and `tools/generate_skills.py`. It is named for its contents (ASC topics and industry
+regimes) rather than its source; the source is stated here, in `SKILL.md`, and in the
+skill's own description.
 
-`tools/segment_book.py` and `tools/generate_skills.py` build it from a copy of the
-book you own. Install the result at `~/.claude/skills/gaap-accounting`, where
-`gaapai.router.default_pack_path()` finds it. Without a pack the kernel, semantics,
-question engine, planner and diagrams all work unchanged; only industry reference
-lookups come back empty.
+**How original is it?** Measured as verbatim 10-word overlap against the extracted
+source text:
+
+| Part | Size | Overlap |
+|---|---|---|
+| `SKILL.md`, `cheatsheet.md`, `patterns.md` | 88 KB | 0.0% |
+| `glossary.md` | — | 0.9% |
+| `industries/` (20 files) | 308 KB | 3.1% |
+| `chapters/` (64 files) | 552 KB | 26.9% |
+
+The industry files and the top-level material are original work — scope, core model,
+decision-rule tables, thresholds, anti-patterns and ASC references, written out
+rather than extracted. The chapter files are thinner: they largely follow the
+source's heading structure and section ordering, which is why their overlap is high.
+Treat `chapters/` as an index into the standard, not as independent exposition.
+
+No ASC text is reproduced anywhere; the Codification is copyright of the Financial
+Accounting Foundation. The raw extracted book text (`extraction/`) is **not** in this
+repository and is gitignored.
+
+The router prefers the project copy, then `~/.claude/skills/gaap-accounting`, then
+`~/.agents/skills/gaap-accounting`.
 
 ### Citations
 

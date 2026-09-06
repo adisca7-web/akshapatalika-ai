@@ -1,0 +1,1331 @@
+{
+  "chapters": [
+    {
+      "chapter": 1,
+      "asc": "105",
+      "title": "Generally Accepted Accounting",
+      "file": "chapters/ch01-generally-accepted-accounting.md",
+      "subskills": [
+        "PRINCIPLES"
+      ],
+      "examples": 3,
+      "citations": 6,
+      "words": 10899
+    },
+    {
+      "chapter": 2,
+      "asc": "205",
+      "title": "Presentation Of Financial Statements",
+      "file": "chapters/ch02-presentation-of-financial-statements.md",
+      "subskills": [],
+      "examples": 4,
+      "citations": 45,
+      "words": 4873
+    },
+    {
+      "chapter": 3,
+      "asc": "210",
+      "title": "Balance Sheet",
+      "file": "chapters/ch03-balance-sheet.md",
+      "subskills": [],
+      "examples": 0,
+      "citations": 36,
+      "words": 4661
+    },
+    {
+      "chapter": 4,
+      "asc": "215",
+      "title": "Statement Of Shareholder Equity",
+      "file": "chapters/ch04-statement-of-shareholder-equity.md",
+      "subskills": [
+        "EQUITY"
+      ],
+      "examples": 0,
+      "citations": 1,
+      "words": 34
+    },
+    {
+      "chapter": 5,
+      "asc": "220",
+      "title": "Income Statement\u2014Reporting",
+      "file": "chapters/ch05-income-statement-reporting.md",
+      "subskills": [
+        "COMPREHENSIVE INCOME",
+        "Income",
+        "Other comprehensive income"
+      ],
+      "examples": 5,
+      "citations": 38,
+      "words": 6104
+    },
+    {
+      "chapter": 6,
+      "asc": "230",
+      "title": "Statement Of Cash Flows",
+      "file": "chapters/ch06-statement-of-cash-flows.md",
+      "subskills": [
+        "Ending A/P",
+        "Johnson Company",
+        "Note"
+      ],
+      "examples": 1,
+      "citations": 28,
+      "words": 7495
+    },
+    {
+      "chapter": 7,
+      "asc": "235",
+      "title": "Notes To Financial Statements",
+      "file": "chapters/ch07-notes-to-financial-statements.md",
+      "subskills": [],
+      "examples": 0,
+      "citations": 5,
+      "words": 1447
+    },
+    {
+      "chapter": 8,
+      "asc": "250",
+      "title": "Accounting Changes And Error",
+      "file": "chapters/ch08-accounting-changes-and-error.md",
+      "subskills": [],
+      "examples": 6,
+      "citations": 22,
+      "words": 7308
+    },
+    {
+      "chapter": 9,
+      "asc": "255",
+      "title": "Changing Prices",
+      "file": "chapters/ch09-changing-prices.md",
+      "subskills": [],
+      "examples": 0,
+      "citations": 3,
+      "words": 1151
+    },
+    {
+      "chapter": 10,
+      "asc": "260",
+      "title": "Earnings Per Share",
+      "file": "chapters/ch10-earnings-per-share.md",
+      "subskills": [
+        "Comprehensive Example"
+      ],
+      "examples": 14,
+      "citations": 30,
+      "words": 14224
+    },
+    {
+      "chapter": 11,
+      "asc": "270",
+      "title": "Interim Reporting",
+      "file": "chapters/ch11-interim-reporting.md",
+      "subskills": [
+        "Requirements Applicable to All Reporting Entities"
+      ],
+      "examples": 4,
+      "citations": 18,
+      "words": 4776
+    },
+    {
+      "chapter": 12,
+      "asc": "272",
+      "title": "Limited Liability Entities",
+      "file": "chapters/ch12-limited-liability-entities.md",
+      "subskills": [],
+      "examples": 0,
+      "citations": 10,
+      "words": 858
+    },
+    {
+      "chapter": 13,
+      "asc": "274",
+      "title": "Personal Financial Statements",
+      "file": "chapters/ch13-personal-financial-statements.md",
+      "subskills": [],
+      "examples": 1,
+      "citations": 13,
+      "words": 2137
+    },
+    {
+      "chapter": 14,
+      "asc": "275",
+      "title": "Risks And Uncertainties",
+      "file": "chapters/ch14-risks-and-uncertainties.md",
+      "subskills": [],
+      "examples": 3,
+      "citations": 21,
+      "words": 1511
+    },
+    {
+      "chapter": 15,
+      "asc": "280",
+      "title": "Segment Reporting",
+      "file": "chapters/ch15-segment-reporting.md",
+      "subskills": [
+        "Summary of Test Results",
+        "Wholesale      Retail      Library      Software      Totals"
+      ],
+      "examples": 3,
+      "citations": 19,
+      "words": 3426
+    },
+    {
+      "chapter": 16,
+      "asc": "310",
+      "title": "Receivables",
+      "file": "chapters/ch16-receivables.md",
+      "subskills": [
+        "Change in Estimate",
+        "Imputed Interest",
+        "Lending and Financing Activities, Including Trade Receivables",
+        "Pledging, Assigning, and Factoring Receivables",
+        "Pledging",
+        "Assignment",
+        "Factoring",
+        "Subsequent Measurement",
+        "Technical Alert \u2013 ASU 2016-13",
+        "Technical Alert \u2013 ASU 2019-04",
+        "Impairment of Loans and Receivables",
+        "Measurement",
+        "Subsequent Measurement for Specific Types of Receivables",
+        "Financial Assets Subject to Prepayment",
+        "Standby Commitments to Purchase Loans",
+        "Loans and Trade Receivables Not Held for Sale",
+        "Nonmortgage Loans Not Held for Sale",
+        "Nonmortgage Loans Held for Sale",
+        "Transfers of Nonmortgage Loans between Classifications",
+        "Loans Not Previously Held for Sale",
+        "Amortization of Discount or Premium on Notes",
+        "Premiums Allocated to Loans Purchased in a Credit Card Portfolio",
+        "Hedged Portfolios of Loans",
+        "Interest Income",
+        "ASC 310-20, Nonrefundable Fees and Other Costs",
+        "Loan Origination Fees",
+        "Commitment Fees and Costs",
+        "Fees and Costs in Refinancing or Restructurings",
+        "Purchase of a Loan or Group of Loans",
+        "Special Arrangements",
+        "Other Lending-Related Costs",
+        "Credit Quality",
+        "Market conditions",
+        "Changes in creditworthiness",
+        "ASC 310-30 in Greater Detail",
+        "Transfer",
+        "Initial measurement",
+        "Subsequent measurement\u2014loans not accounted for as a debt security",
+        "Cash Flows (Recovery of Uncollectible Loan Receivable)",
+        "Accounting for Investments in Pools of Loans Acquired by Transfer"
+      ],
+      "examples": 20,
+      "citations": 100,
+      "words": 20182
+    },
+    {
+      "chapter": 17,
+      "asc": "320",
+      "title": "Investments\u2014Debt And Equity Securities",
+      "file": "chapters/ch17-investments-debt-and-equity-securities.md",
+      "subskills": [
+        "Security      Maturity   Amortized               Assumed fair",
+        "Security Cost X2 fair value",
+        "Beginning  Interest  Recognized    Discount         Ending",
+        "Net",
+        "Exhibit \u2013 Accounting Treatment for Unrealized Holding Gains or Losses",
+        "From        To                          Accounting Treatment",
+        "OCI                        Abbreviations"
+      ],
+      "examples": 10,
+      "citations": 67,
+      "words": 9588
+    },
+    {
+      "chapter": 18,
+      "asc": "320",
+      "title": "Investments\u2014Debt Securities",
+      "file": "chapters/ch18-investments-debt-securities.md",
+      "subskills": [],
+      "examples": 5,
+      "citations": 70,
+      "words": 8602
+    },
+    {
+      "chapter": 19,
+      "asc": "321",
+      "title": "Investments\u2014Equity Securities",
+      "file": "chapters/ch19-investments-equity-securities.md",
+      "subskills": [],
+      "examples": 0,
+      "citations": 25,
+      "words": 2097
+    },
+    {
+      "chapter": 20,
+      "asc": "323",
+      "title": "Investments\u2014Equity Method And",
+      "file": "chapters/ch20-investments-equity-method-and.md",
+      "subskills": [
+        "JOINT VENTURES",
+        "Equity Method Losses",
+        "Deferred Income Tax Accounting",
+        "Decreases in Investment Value",
+        "Intercompany Transactions between Investor and Investee",
+        "Investee Income Items Separately Reportable by the Investor",
+        "Changes in Level of Ownership or Degree of Influence",
+        "ACCOUNTING FOR INVESTMENTS"
+      ],
+      "examples": 11,
+      "citations": 70,
+      "words": 15466
+    },
+    {
+      "chapter": 21,
+      "asc": "325",
+      "title": "Investments\u2014Other",
+      "file": "chapters/ch21-investments-other.md",
+      "subskills": [],
+      "examples": 0,
+      "citations": 38,
+      "words": 3191
+    },
+    {
+      "chapter": 22,
+      "asc": "326",
+      "title": "Financial Instruments\u2014Credit Losses",
+      "file": "chapters/ch22-financial-instruments-credit-losses.md",
+      "subskills": [
+        "CREDIT LOSSES"
+      ],
+      "examples": 3,
+      "citations": 46,
+      "words": 5697
+    },
+    {
+      "chapter": 23,
+      "asc": "330",
+      "title": "Inventory",
+      "file": "chapters/ch23-inventory.md",
+      "subskills": [
+        "Cost Flow Assumptions",
+        "Other Issues",
+        "Valuation Issues",
+        "Lower of Cost or Net Realizable Value",
+        "Lower of Cost or Market (LCM)",
+        "Market Determination",
+        "Total",
+        "Sale",
+        "Purchase"
+      ],
+      "examples": 19,
+      "citations": 21,
+      "words": 17899
+    },
+    {
+      "chapter": 24,
+      "asc": "340",
+      "title": "Other Assets And Deferred Costs",
+      "file": "chapters/ch24-other-assets-and-deferred-costs.md",
+      "subskills": [
+        "Software name  Maintenance start  Maintenance        Maintenance",
+        "Cost Item           Amount                              Recognition",
+        "Notes"
+      ],
+      "examples": 6,
+      "citations": 44,
+      "words": 5645
+    },
+    {
+      "chapter": 25,
+      "asc": "350",
+      "title": "Intangibles\u2014Goodwill And Other",
+      "file": "chapters/ch25-intangibles-goodwill-and-other.md",
+      "subskills": [
+        "OTHER",
+        "Software",
+        "Costs",
+        "CONCEPTS, RULES, AND EXAMPLES\u2014ASC",
+        "All of the ASC 350 subtopics follow the scope guidance in ASC 350-10. In"
+      ],
+      "examples": 3,
+      "citations": 127,
+      "words": 13789
+    },
+    {
+      "chapter": 26,
+      "asc": "360",
+      "title": "Property, Plant, And Equipment",
+      "file": "chapters/ch26-property-plant-and-equipment.md",
+      "subskills": [
+        "Other Depreciation Methods",
+        "Long-lived Assets to Be Disposed of Other Than by Sale",
+        "Introduction",
+        "Criteria for Using Full Accrual Method"
+      ],
+      "examples": 13,
+      "citations": 111,
+      "words": 19776
+    },
+    {
+      "chapter": 27,
+      "asc": "405",
+      "title": "Liabilities",
+      "file": "chapters/ch27-liabilities.md",
+      "subskills": [],
+      "examples": 1,
+      "citations": 15,
+      "words": 1712
+    },
+    {
+      "chapter": 28,
+      "asc": "410",
+      "title": "Asset Retirement And Environmental",
+      "file": "chapters/ch28-asset-retirement-and-environmental.md",
+      "subskills": [],
+      "examples": 7,
+      "citations": 33,
+      "words": 7945
+    },
+    {
+      "chapter": 29,
+      "asc": "420",
+      "title": "Exit Or Disposal Cost Obligations",
+      "file": "chapters/ch29-exit-or-disposal-cost-obligations.md",
+      "subskills": [],
+      "examples": 1,
+      "citations": 23,
+      "words": 2138
+    },
+    {
+      "chapter": 30,
+      "asc": "430",
+      "title": "Deferred Revenue",
+      "file": "chapters/ch30-deferred-revenue.md",
+      "subskills": [],
+      "examples": 0,
+      "citations": 1,
+      "words": 77
+    },
+    {
+      "chapter": 31,
+      "asc": "440",
+      "title": "Commitments",
+      "file": "chapters/ch31-commitments.md",
+      "subskills": [],
+      "examples": 0,
+      "citations": 27,
+      "words": 931
+    },
+    {
+      "chapter": 32,
+      "asc": "450",
+      "title": "Contingencies",
+      "file": "chapters/ch32-contingencies.md",
+      "subskills": [],
+      "examples": 0,
+      "citations": 48,
+      "words": 3056
+    },
+    {
+      "chapter": 33,
+      "asc": "460",
+      "title": "Guarantees",
+      "file": "chapters/ch33-guarantees.md",
+      "subskills": [],
+      "examples": 2,
+      "citations": 26,
+      "words": 5554
+    },
+    {
+      "chapter": 34,
+      "asc": "470",
+      "title": "Debt",
+      "file": "chapters/ch34-debt.md",
+      "subskills": [
+        "Commitment Date",
+        "General Subsection",
+        "Debt Issued with Both Conversion Features and Stock Warrants",
+        "Convertible Debt without Beneficial Conversion",
+        "Conversion",
+        "Convertible Securities with Beneficial Conversion Features",
+        "Accounting Treatment of Beneficial Conversion Features",
+        "Instruments Paid-in-Kind",
+        "Instruments Issued as a Repayment for Nonconvertible",
+        "Instrument",
+        "Derecognition",
+        "Contingent Conversion",
+        "Dollar Terms",
+        "Terms",
+        "Contingent Price Terms",
+        "Contingent Conversion with Variable Terms",
+        "Conversion Feature",
+        "Contingent Conversion Rights Triggered by Issuer Call",
+        "Discount Accretion and Amortization",
+        "ASC 470-30, Participating Mortgage Loans",
+        "ASC 470-40, Product Financing Arrangements",
+        "Extinguishments, and Troubled Debt Restructurings",
+        "ASC 470-50, Modifications and Extinguishments",
+        "ASC 470-60, Troubled Debt Restructurings by Debtors"
+      ],
+      "examples": 16,
+      "citations": 102,
+      "words": 17151
+    },
+    {
+      "chapter": 35,
+      "asc": "480",
+      "title": "Distinguishing Liabilities From Equity",
+      "file": "chapters/ch35-distinguishing-liabilities-from-equity.md",
+      "subskills": [
+        "Shares",
+        "Date"
+      ],
+      "examples": 17,
+      "citations": 30,
+      "words": 7686
+    },
+    {
+      "chapter": 36,
+      "asc": "505",
+      "title": "Equity",
+      "file": "chapters/ch36-equity.md",
+      "subskills": [
+        "With ESOPs, and",
+        "Cash",
+        "Notes"
+      ],
+      "examples": 11,
+      "citations": 40,
+      "words": 13082
+    },
+    {
+      "chapter": 37,
+      "asc": "605",
+      "title": "Revenue Recognition",
+      "file": "chapters/ch37-revenue-recognition.md",
+      "subskills": [
+        "Requirements for Revenue Recognition Met",
+        "Requirements for Revenue Recognition Not Met",
+        "Other Issues",
+        "ASC 605-20, Service Revenues",
+        "Service versus Product Transactions",
+        "Revenue Recognition Methods",
+        "Expense Recognition",
+        "Initiation and Installation Fees",
+        "Other Guidance to Accounting for Service Transactions",
+        "ASC 605-25, Multiple-Element Arrangements",
+        "Terms Used in ASC 605-25",
+        "Units of Accounting",
+        "ASC 605-28, Milestone Method",
+        "ASC 605-35, Construction-Type and Production-Type Contracts",
+        "Contracts",
+        "Methods of Accounting",
+        "Costs Incurred",
+        "Types of Contracts",
+        "Revenue Measurement",
+        "Contract Losses"
+      ],
+      "examples": 10,
+      "citations": 25,
+      "words": 22074
+    },
+    {
+      "chapter": 38,
+      "asc": "606",
+      "title": "Revenue From Contracts With Customers",
+      "file": "chapters/ch38-revenue-from-contracts-with-customers.md",
+      "subskills": [
+        "CUSTOMERS",
+        "Performance Obligation",
+        "Other Issues",
+        "Recognition Model",
+        "CUSTOMER",
+        "ASC 606",
+        "OBLIGATIONS"
+      ],
+      "examples": 17,
+      "citations": 115,
+      "words": 31196
+    },
+    {
+      "chapter": 39,
+      "asc": "610",
+      "title": "Other Income",
+      "file": "chapters/ch39-other-income.md",
+      "subskills": [],
+      "examples": 0,
+      "citations": 23,
+      "words": 1610
+    },
+    {
+      "chapter": 40,
+      "asc": "705",
+      "title": "Cost Of Sales And Services",
+      "file": "chapters/ch40-cost-of-sales-and-services.md",
+      "subskills": [],
+      "examples": 0,
+      "citations": 9,
+      "words": 626
+    },
+    {
+      "chapter": 41,
+      "asc": "710",
+      "title": "Compensation\u2014 General",
+      "file": "chapters/ch41-compensation-general.md",
+      "subskills": [],
+      "examples": 1,
+      "citations": 15,
+      "words": 2062
+    },
+    {
+      "chapter": 42,
+      "asc": "712",
+      "title": "Compensation\u2014Nonretirement Postemployment Benefits",
+      "file": "chapters/ch42-compensation-nonretirement-postemployment-benefits.md",
+      "subskills": [],
+      "examples": 0,
+      "citations": 5,
+      "words": 444
+    },
+    {
+      "chapter": 43,
+      "asc": "715",
+      "title": "Compensation\u2014Retirement Benefits",
+      "file": "chapters/ch43-compensation-retirement-benefits.md",
+      "subskills": [
+        "BENEFITS",
+        "Assets",
+        "Employer\u2019s Liabilities and Assets under ASC 715-30",
+        "Additional ASC 715-30 Guidance",
+        "Cash Balance Plans",
+        "Reporting Funded Status When There Is More Than One Plan",
+        "Reporting Funded Status and Benefit Plans Transactions and Events in",
+        "Comprehensive Income",
+        "Measurement Date for Year-end Financial Statements",
+        "Measurement Date for Interim Financial Statements",
+        "Other Pension Considerations",
+        "Annuity and Insurance Contracts",
+        "Non-U.S. Pension Arrangements",
+        "Settlements and Curtailments of Plans",
+        "Settlements",
+        "Curtailments",
+        "Recognition of Curtailments",
+        "Termination Benefits",
+        "Component Disposal",
+        "ASC 715-60, Defined Benefits Plans\u2014Other Postretirement",
+        "Accounting for Postretirement Benefits"
+      ],
+      "examples": 12,
+      "citations": 89,
+      "words": 18347
+    },
+    {
+      "chapter": 44,
+      "asc": "718",
+      "title": "Compensation\u2014 Stock Compensation",
+      "file": "chapters/ch44-compensation-stock-compensation.md",
+      "subskills": [
+        "COMPENSATION",
+        "Subsequent Measurement of Compensation",
+        "Modifications of Awards of Equity Instruments",
+        "Other ASC 718 Matters",
+        "ASC 718-40, Employee Stock Ownership Plans",
+        "ASC 718-50, Employee Share Purchase Plans",
+        "ASC 718-740, Income Taxes",
+        "Disclosure Requirements for ASC 718",
+        "Other Sources",
+        "Measurement of"
+      ],
+      "examples": 13,
+      "citations": 101,
+      "words": 18957
+    },
+    {
+      "chapter": 45,
+      "asc": "720",
+      "title": "Other Expenses",
+      "file": "chapters/ch45-other-expenses.md",
+      "subskills": [
+        "Notes"
+      ],
+      "examples": 1,
+      "citations": 44,
+      "words": 2295
+    },
+    {
+      "chapter": 46,
+      "asc": "730",
+      "title": "Research And Development",
+      "file": "chapters/ch46-research-and-development.md",
+      "subskills": [],
+      "examples": 1,
+      "citations": 21,
+      "words": 1845
+    },
+    {
+      "chapter": 47,
+      "asc": "740",
+      "title": "Income Taxes",
+      "file": "chapters/ch47-income-taxes.md",
+      "subskills": [
+        "Tax Law Changes",
+        "General Rules",
+        "Enactment Occurring During an Interim Period",
+        "Leveraged Leases",
+        "Reporting the Effect of Tax Status Changes",
+        "Reporting the Effect of Accounting Changes for Income Tax Purposes",
+        "Tax Accounting",
+        "Tax Allocation for Business Investments",
+        "Summary of Temporary Differences of Investees and Subsidiaries",
+        "Asset Acquisitions Outside of a Business Combination",
+        "ASC 740-20, Intraperiod Income Tax Allocation",
+        "Comprehensive Example of the Intraperiod Income Tax Allocation Process",
+        "ASC 730, Other Consideration or Special Areas",
+        "Undistributed Earnings of a Subsidiary",
+        "Undistributed Earnings of an Investee",
+        "ASC 740-270, Accounting for Income Taxes in Interim Periods",
+        "Basic Rules",
+        "Basic Example of Interim Period Accounting for Income Taxes",
+        "Judgment",
+        "Liabilities Are Incurred",
+        "Income Tax Provision Applicable to Interim Period Nonoperating Items"
+      ],
+      "examples": 20,
+      "citations": 66,
+      "words": 23370
+    },
+    {
+      "chapter": 48,
+      "asc": "805",
+      "title": "Business Combinations",
+      "file": "chapters/ch48-business-combinations.md",
+      "subskills": [
+        "Operating Leases",
+        "Operating Lease Assets Owned by an Acquiree/Lessor",
+        "Assets with Uncertain Cash Flows",
+        "Assets the Acquirer Plans to Idle or to Use in a Manner That Is Not Their",
+        "Highest and Best Use",
+        "Identifiable Intangibles Are Recognized Separately from Goodwill",
+        "Do So",
+        "Acquiree\u2019s Employees Had Not Yet Completed All of the Requisite",
+        "Services by the Acquisition Date",
+        "Step 6\u2014Recognize and Measure Any Noncontrolling Interest in the",
+        "Acquiree",
+        "Noncontrolling Interest Discount",
+        "Step 7\u2014Measure the Consideration Transferred",
+        "Business Combinations Achieved in Stages (Step Acquisitions)",
+        "ASC 805-40, Reverse Acquisitions",
+        "Introduction",
+        "Structure of the Transaction",
+        "Continuation of the Business of the Legal Acquiree",
+        "Equity Structure Adjustments"
+      ],
+      "examples": 11,
+      "citations": 100,
+      "words": 21332
+    },
+    {
+      "chapter": 49,
+      "asc": "808",
+      "title": "Collaborative Arrangements",
+      "file": "chapters/ch49-collaborative-arrangements.md",
+      "subskills": [],
+      "examples": 4,
+      "citations": 19,
+      "words": 3936
+    },
+    {
+      "chapter": 50,
+      "asc": "810",
+      "title": "Consolidations",
+      "file": "chapters/ch50-consolidations.md",
+      "subskills": [
+        "Consolidation Models\u2014Introduction and Background",
+        "The VIE Model",
+        "Voting Interest Model"
+      ],
+      "examples": 5,
+      "citations": 59,
+      "words": 17052
+    },
+    {
+      "chapter": 51,
+      "asc": "815",
+      "title": "Derivatives And Hedging",
+      "file": "chapters/ch51-derivatives-and-hedging.md",
+      "subskills": [
+        "ASC 815-20, Hedging\u2014General",
+        "Private Company Alternative",
+        "Summary of Accounting for Hedges",
+        "ASC 815-25, Fair Value Hedges",
+        "ASC 815-30, Cash Flow Hedges",
+        "Foreign Currency Hedges",
+        "Forward Exchange Contracts",
+        "Options"
+      ],
+      "examples": 11,
+      "citations": 125,
+      "words": 28319
+    },
+    {
+      "chapter": 52,
+      "asc": "820",
+      "title": "Fair Value Measurements",
+      "file": "chapters/ch52-fair-value-measurements.md",
+      "subskills": [
+        "Notes"
+      ],
+      "examples": 0,
+      "citations": 47,
+      "words": 9538
+    },
+    {
+      "chapter": 53,
+      "asc": "825",
+      "title": "Financial Instruments",
+      "file": "chapters/ch53-financial-instruments.md",
+      "subskills": [],
+      "examples": 0,
+      "citations": 25,
+      "words": 1945
+    },
+    {
+      "chapter": 54,
+      "asc": "830",
+      "title": "Foreign Currency",
+      "file": "chapters/ch54-foreign-currency.md",
+      "subskills": [
+        "20X2",
+        "Assets",
+        "Accounts",
+        "Unearned",
+        "Common",
+        "Translation",
+        "December 31",
+        "Operating",
+        "Adjustments",
+        "Depreciation",
+        "Increase in",
+        "Financing",
+        "Dividends",
+        "20X3",
+        "Original investment",
+        "Dividends received",
+        "Cash",
+        "Translation adjustments",
+        "Statement of Cash Flows (Remeasurement)",
+        "Adjustments to",
+        "Remeasurement"
+      ],
+      "examples": 5,
+      "citations": 20,
+      "words": 8083
+    },
+    {
+      "chapter": 55,
+      "asc": "835",
+      "title": "Interest",
+      "file": "chapters/ch55-interest.md",
+      "subskills": [
+        "Average Accumulated Expenditures",
+        "Potential Interest Cost to Be Capitalized",
+        "Miller                                    Krueger",
+        "Debit        Credit",
+        "Notes"
+      ],
+      "examples": 8,
+      "citations": 24,
+      "words": 6892
+    },
+    {
+      "chapter": 56,
+      "asc": "840",
+      "title": "Leases",
+      "file": "chapters/ch56-leases.md",
+      "subskills": [
+        "Purchase Option",
+        "Leases Involving Real Estate and Equipment",
+        "Leases Involving Only Part of a Building",
+        "Sale-Leaseback Transactions",
+        "Other Lease Issues",
+        "Lessee Involvement in Asset Construction",
+        "Change in Residual Value",
+        "Change in the Provisions of a Lease",
+        "Early Termination of a Lease",
+        "Renewal or Extension of an Existing Lease",
+        "Leases between Related Parties",
+        "Indemnification Provisions in Lease Agreements",
+        "Accounting for Leases in a Business Combination",
+        "Sale or Assignment to Third Parties; Nonrecourse Financing",
+        "Money-over-Money Lease Transactions",
+        "Wrap-Lease Transactions",
+        "Transfers of Residual Value (ASC 860)",
+        "Leases Involving Government Units",
+        "Maintenance Deposits by Lessees"
+      ],
+      "examples": 13,
+      "citations": 36,
+      "words": 30883
+    },
+    {
+      "chapter": 57,
+      "asc": "842",
+      "title": "Leases",
+      "file": "chapters/ch57-leases.md",
+      "subskills": [],
+      "examples": 0,
+      "citations": 19,
+      "words": 5816
+    },
+    {
+      "chapter": 58,
+      "asc": "845",
+      "title": "Nonmonetary Transactions",
+      "file": "chapters/ch58-nonmonetary-transactions.md",
+      "subskills": [],
+      "examples": 5,
+      "citations": 29,
+      "words": 5489
+    },
+    {
+      "chapter": 59,
+      "asc": "850",
+      "title": "Related-Party Disclosures",
+      "file": "chapters/ch59-related-party-disclosures.md",
+      "subskills": [],
+      "examples": 0,
+      "citations": 2,
+      "words": 566
+    },
+    {
+      "chapter": 60,
+      "asc": "852",
+      "title": "Reorganizations",
+      "file": "chapters/ch60-reorganizations.md",
+      "subskills": [],
+      "examples": 0,
+      "citations": 5,
+      "words": 1345
+    },
+    {
+      "chapter": 61,
+      "asc": "853",
+      "title": "Service Concession Arrangements",
+      "file": "chapters/ch61-service-concession-arrangements.md",
+      "subskills": [],
+      "examples": 0,
+      "citations": 5,
+      "words": 540
+    },
+    {
+      "chapter": 62,
+      "asc": "855",
+      "title": "Subsequent Events",
+      "file": "chapters/ch62-subsequent-events.md",
+      "subskills": [],
+      "examples": 0,
+      "citations": 4,
+      "words": 653
+    },
+    {
+      "chapter": 63,
+      "asc": "860",
+      "title": "Transfers And Servicing",
+      "file": "chapters/ch63-transfers-and-servicing.md",
+      "subskills": [
+        "Financial assets",
+        "Collateral",
+        "Posting a receivable as collateral",
+        "Factoring",
+        "Transfers of receivables with recourse"
+      ],
+      "examples": 13,
+      "citations": 67,
+      "words": 14697
+    },
+    {
+      "chapter": 64,
+      "asc": "900s",
+      "title": "Specialized Industry Gaap",
+      "file": "chapters/ch64-specialized-industry-gaap.md",
+      "subskills": [
+        "Valuation of Unamortized Film Costs",
+        "ENTERTAINMENT\u2014MUSIC (ASC 928)",
+        "Accounting by Licensors",
+        "Accounting by Licensees",
+        "EXTRACTIVE ACTIVITIES\u2014OIL AND GAS (ASC 932)",
+        "Accounting Guidance",
+        "Presentation and Disclosure",
+        "FINANCIAL SERVICES\u2014INSURANCE (ASC 944)",
+        "Premium Income",
+        "Nontraditional Long-Duration Contracts",
+        "Costs Associated with Acquiring or Renewing Insurance Contracts",
+        "Present Value of Future Profits",
+        "Accounting Policies",
+        "Accounting for High-Yield Debt Securities",
+        "Exemptions from the Requirement to Provide a Statement of Cash Flows",
+        "Taxes",
+        "Commodity Pools",
+        "Foreign Currency Matters",
+        "Balance Sheets",
+        "FINANCIAL SERVICES\u2014MORTGAGE BANKING (ASC 948)",
+        "Mortgage Banking Activities",
+        "Loan Origination Fees",
+        "Sales to Affiliated Entities",
+        "Issuance of GNMA Securities",
+        "Loan and Commitment Fees and Costs",
+        "FINANCIAL SERVICES\u2014TITLE PLANT (ASC 950)",
+        "Acquisition Costs",
+        "Operating Costs",
+        "Reporting Title Plant Sales",
+        "FRANCHISORS (ASC 952)",
+        "Costs",
+        "Repossessed Franchises",
+        "NOT-FOR-PROFIT ENTITIES (ASC 958)",
+        "Complete Set of Financial Statements",
+        "Net Assets and Changes in Net Assets",
+        "Investments and Endowment Funds",
+        "Split-Interest Agreements",
+        "Reporting Revenues",
+        "Reporting Expenses",
+        "Mergers and Acquisitions"
+      ],
+      "examples": 4,
+      "citations": 196,
+      "words": 41396
+    }
+  ],
+  "industries": [
+    {
+      "asc": [
+        "912"
+      ],
+      "primary": "912",
+      "title": "Contractors\u2014Federal Government",
+      "file": "industries/asc912-federal-government-contractors.md",
+      "subskills": [
+        "Cost-plus-fixed-fee contracts",
+        "Terminated Defense Contracts"
+      ],
+      "examples": 0,
+      "citations": 7,
+      "words": 720
+    },
+    {
+      "asc": [
+        "920"
+      ],
+      "primary": "920",
+      "title": "Entertaintment\u2014Broadcasters",
+      "file": "industries/asc920-broadcasters.md",
+      "subskills": [
+        "Source: ASC 920, Glossaries",
+        "Accounting for License Agreements",
+        "Amortizing Capitalized Costs",
+        "Film  From     To      date                  Date revenue Date revenue",
+        "Amortization Schedules\u2014Annual Compounding",
+        "Accounting for Network Affiliation Agreements",
+        "Reporting and Disclosure"
+      ],
+      "examples": 0,
+      "citations": 6,
+      "words": 1558
+    },
+    {
+      "asc": [
+        "922"
+      ],
+      "primary": "922",
+      "title": "Entertainment\u2014Cable Television",
+      "file": "industries/asc922-cable-television.md",
+      "subskills": [
+        "Accounting during the Prematurity Period"
+      ],
+      "examples": 0,
+      "citations": 7,
+      "words": 999
+    },
+    {
+      "asc": [
+        "924"
+      ],
+      "primary": "924",
+      "title": "Entertainment\u2014Casinos",
+      "file": "industries/asc924-casinos.md",
+      "subskills": [],
+      "examples": 0,
+      "citations": 4,
+      "words": 282
+    },
+    {
+      "asc": [
+        "926"
+      ],
+      "primary": "926",
+      "title": "Entertainment\u2014Film",
+      "file": "industries/asc926-entertainment-film.md",
+      "subskills": [
+        "Costs and Expenses\u2014Components",
+        "Valuation of Unamortized Film Costs"
+      ],
+      "examples": 0,
+      "citations": 23,
+      "words": 3061
+    },
+    {
+      "asc": [
+        "928"
+      ],
+      "primary": "928",
+      "title": "Entertainment\u2014Music",
+      "file": "industries/asc928-music.md",
+      "subskills": [
+        "Source: ASC 928, Glossary",
+        "Accounting by Licensees"
+      ],
+      "examples": 0,
+      "citations": 2,
+      "words": 884
+    },
+    {
+      "asc": [
+        "932"
+      ],
+      "primary": "932",
+      "title": "Extractive Activities\u2014Oil And Gas",
+      "file": "industries/asc932-oil-and-gas.md",
+      "subskills": [],
+      "examples": 0,
+      "citations": 3,
+      "words": 1005
+    },
+    {
+      "asc": [
+        "942"
+      ],
+      "primary": "942",
+      "title": "Financial Services\u2014Depository And Lending",
+      "file": "industries/asc942-depository-and-lending.md",
+      "subskills": [
+        "Banks",
+        "Thrifts",
+        "Credit unions"
+      ],
+      "examples": 0,
+      "citations": 16,
+      "words": 2999
+    },
+    {
+      "asc": [
+        "944"
+      ],
+      "primary": "944",
+      "title": "Financial Services\u2014Insurance",
+      "file": "industries/asc944-insurance.md",
+      "subskills": [
+        "Premium Income",
+        "Nontraditional Long-Duration Contracts2",
+        "Costs Associated with Acquiring or Renewing Insurance Contracts"
+      ],
+      "examples": 0,
+      "citations": 37,
+      "words": 4878
+    },
+    {
+      "asc": [
+        "946"
+      ],
+      "primary": "946",
+      "title": "Financial Services\u2014Investment Companies",
+      "file": "industries/asc946-investment-companies.md",
+      "subskills": [
+        "Accounting Policies",
+        "Accounting for High-Yield Debt Securities",
+        "Taxes",
+        "Commodity Pools",
+        "Foreign Currency Matters",
+        "Balance Sheets"
+      ],
+      "examples": 0,
+      "citations": 9,
+      "words": 2647
+    },
+    {
+      "asc": [
+        "948"
+      ],
+      "primary": "948",
+      "title": "Financial Services\u2014Mortgage Banking",
+      "file": "industries/asc948-mortgage-banking.md",
+      "subskills": [
+        "Source: ASC 948, Glossary",
+        "Mortgage Banking Activities",
+        "Loan Origination Fees",
+        "Sales to Affiliated Entities",
+        "Issuance of GNMA Securities"
+      ],
+      "examples": 0,
+      "citations": 6,
+      "words": 2010
+    },
+    {
+      "asc": [
+        "950"
+      ],
+      "primary": "950",
+      "title": "Financial Services\u2014Title Plant",
+      "file": "industries/asc950-title-plant.md",
+      "subskills": [
+        "Acquisition Costs",
+        "Operating Costs",
+        "Reporting Title Plant Sales"
+      ],
+      "examples": 0,
+      "citations": 2,
+      "words": 723
+    },
+    {
+      "asc": [
+        "952"
+      ],
+      "primary": "952",
+      "title": "Franchisors",
+      "file": "industries/asc952-franchisors.md",
+      "subskills": [
+        "Costs",
+        "Repossessed Franchises"
+      ],
+      "examples": 0,
+      "citations": 3,
+      "words": 617
+    },
+    {
+      "asc": [
+        "958"
+      ],
+      "primary": "958",
+      "title": "Not-For-Profit Entities",
+      "file": "industries/asc958-not-for-profit.md",
+      "subskills": [
+        "Complete Set of Financial Statements",
+        "Net Assets and Changes in Net Assets",
+        "Investments and Endowment Funds",
+        "Split-Interest Agreements",
+        "Reporting Revenues",
+        "Reporting Expenses",
+        "Mergers and Acquisitions",
+        "The Reporting Entity"
+      ],
+      "examples": 0,
+      "citations": 23,
+      "words": 7487
+    },
+    {
+      "asc": [
+        "960",
+        "962",
+        "965"
+      ],
+      "primary": "960",
+      "title": "Plan Accounting",
+      "file": "industries/asc960-plan-accounting.md",
+      "subskills": [
+        "Source: ASC 960, Glossary",
+        "Complete Set of Financial Statements",
+        "Statement of Changes in Net Assets Available for Benefits",
+        "Interests in Master Trusts",
+        "Risks and Uncertainties",
+        "Defined Benefit Plans (ASC 960)",
+        "Defined Contribution Plans (ASC 962)",
+        "Government Regulations",
+        "Terminating Plans"
+      ],
+      "examples": 0,
+      "citations": 20,
+      "words": 4399
+    },
+    {
+      "asc": [
+        "970"
+      ],
+      "primary": "970",
+      "title": "Real Estate\u2014General",
+      "file": "industries/asc970-real-estate-general.md",
+      "subskills": [
+        "Preacquisition Costs",
+        "Taxes and Insurance",
+        "Property, Plant, and Equipment\u2014Project Costs",
+        "Amenities",
+        "Incidental Operations",
+        "Allocation of Costs",
+        "Revisions of Estimates",
+        "Abandonment and Change in Use",
+        "Selling Costs",
+        "Rental Costs"
+      ],
+      "examples": 0,
+      "citations": 5,
+      "words": 1777
+    },
+    {
+      "asc": [
+        "976"
+      ],
+      "primary": "976",
+      "title": "Real Estate\u2014Retail Land",
+      "file": "industries/asc976-real-estate-retail-land.md",
+      "subskills": [
+        "Receivables"
+      ],
+      "examples": 0,
+      "citations": 2,
+      "words": 264
+    },
+    {
+      "asc": [
+        "978"
+      ],
+      "primary": "978",
+      "title": "Real Estate Time-Sharing Activities",
+      "file": "industries/asc978-real-estate-time-sharing.md",
+      "subskills": [
+        "Accounting for Time-Share Transactions",
+        "Incidental Operations",
+        "VIES and Other Complex Structures"
+      ],
+      "examples": 0,
+      "citations": 3,
+      "words": 948
+    },
+    {
+      "asc": [
+        "980"
+      ],
+      "primary": "980",
+      "title": "Regulated Operations",
+      "file": "industries/asc980-regulated-operations.md",
+      "subskills": [
+        "Asset Recognition",
+        "Imposition of Liabilities",
+        "Accounting for Liabilities Related to Asset Retirement Obligations",
+        "Other Accounting Guidance"
+      ],
+      "examples": 0,
+      "citations": 7,
+      "words": 1878
+    },
+    {
+      "asc": [
+        "985"
+      ],
+      "primary": "985",
+      "title": "Software",
+      "file": "industries/asc985-software.md",
+      "subskills": [
+        "Costs of Software Developed Internally for Sale or Lease",
+        "Notes"
+      ],
+      "examples": 0,
+      "citations": 16,
+      "words": 1468
+    }
+  ]
+}

@@ -14,12 +14,6 @@ dist/
 .venv/
 venv/
 
-# The reference pack distilled from Wiley GAAP 2020. Synthesised rather than
-# copied, but still a derivative of a copyrighted book, so it is not
-# redistributed from this public repository. The router falls back to
-# ~/.claude/skills/wiley-gaap when the pack is installed locally.
-skills/wiley-gaap/
-
 # Local scratch.
 exports/
 .venv311/
