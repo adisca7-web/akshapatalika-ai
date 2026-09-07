@@ -48,7 +48,7 @@ numbers, and the answer arrives with the rule that made it right.
 
 ## Start here: what it finds in an ordinary file
 
-A real Shopify export — 57 orders, 81 rows, nothing unusual. Its `Total` column sums
+A real eCommerce export — 57 orders, 81 rows, nothing unusual. Its `Total` column sums
 to **32,204.06**. Reported revenue under US GAAP is **29,723.47**. In between:
 
 | Finding | Amount | Why it is not revenue |
