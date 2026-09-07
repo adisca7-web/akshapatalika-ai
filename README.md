@@ -40,6 +40,24 @@ This layer supplies the missing half. It carries the accounting meaning of colum
 rows, and industries — so that when the arithmetic happens, it happens on the right
 numbers, and the answer arrives with the rule that made it right.
 
+```mermaid
+flowchart TD
+    Q["You ask: what was our revenue?"]
+
+    Q --> N["An ordinary tool<br/>finds a revenue-shaped column<br/>and adds it up"]
+    Q --> G["This layer<br/>asks which column, which rows,<br/>and whose rules apply"]
+
+    N --> NR["A number.<br/>No way to tell whether it is right."]
+    G --> GR["A number,<br/>the rule that makes it right,<br/>and what is still undecided."]
+
+    classDef bad fill:#fde8e8,stroke:#c0392b,color:#7b241c
+    classDef good fill:#e8f6ec,stroke:#1e8449,color:#145a32
+    classDef plain fill:#f4f6f7,stroke:#95a5a6,color:#2c3e50
+    class N,NR bad
+    class G,GR good
+    class Q plain
+```
+
 > **The design rule throughout: a confident wrong number is worse than no number.**
 > It is unreviewable, and it reads exactly like a correct one. So when this system
 > cannot answer something properly, it says so.
@@ -155,8 +173,9 @@ The distinction that general models get wrong more than any other:
 **A restriction affects classification. A condition affects timing.** They are
 routinely conflated, and the error moves revenue between years.
 
-† Marked unverified in the catalog — the requirement is right, the paragraph number
-is unconfirmed. See [What is verified](#what-is-verified-and-what-is-not).
+† These paragraph numbers are marked *unverified* in the citation catalog: the
+requirement is right, the numbering is unconfirmed against the published
+Codification. They render with an `UNVERIFIED` marker in the app.
 
 ### Mortgage banking — ASC 948
 
@@ -200,12 +219,79 @@ internal-use software is scoped out of the software-to-be-sold guidance entirely
 | Federal contractors (912) | claimed amounts | termination claims only when realisation is probable |
 | Plan accounting (960/962) | participant loans as investments | notes receivable |
 
+*The figures in this section are illustrations, sized to show the direction and
+magnitude of each error. They are not computed from a client file.*
+
 **What the system does with these.** The column-level guard is automatic: forbidden
 columns are excluded from any revenue aggregation for the selected industry, with the
 ASC citation attached. The deeper treatments — film amortisation schedules,
 insurance duration splits, franchise fee allocation — are documented in the reference
 pack, which the router surfaces alongside the computation, and the harder ones are
 judgement calls the system asks you to make rather than making for you.
+
+---
+
+## How it works
+
+There are two moments. The first happens once, when you load a file. The second
+happens every time you ask something.
+
+### 1. When you load your data
+
+```mermaid
+flowchart TD
+    F["Your CSV, spreadsheet,<br/>or database query"]
+    F --> B["Name every column<br/>revenue? tax? refund?<br/>or never-revenue?"]
+    B --> I["Apply your industry's rules<br/>a casino's handle and an insurer's<br/>written premium are not revenue"]
+    I --> R["Read inside the rows<br/>gift cards, test orders,<br/>cancellations"]
+    R --> D{"Each finding is shown<br/>with its amount and its rule.<br/>You decide."}
+    D --> M[("Saved against your business<br/>and reloaded next time")]
+
+    classDef you fill:#fff4e0,stroke:#d68910,color:#7e5109
+    classDef engine fill:#e8f6ec,stroke:#1e8449,color:#145a32
+    classDef store fill:#f4ecf7,stroke:#7d3c98,color:#4a235a
+    class F,D you
+    class B,I,R engine
+    class M store
+```
+
+Nothing is adjusted here. The system finds and measures; you approve.
+
+### 2. Every time you ask a question
+
+```mermaid
+flowchart TD
+    Q["Revenue by month?<br/>What did you exclude?<br/>Profitability if cost is 50 percent?"]
+    Q --> K{"Can this be<br/>computed exactly?"}
+
+    K -->|"yes"| E
+    K -->|"no, but a model is connected"| P["The model writes the FORMULA<br/>take revenue by month,<br/>multiply by 0.5 for cost,<br/>subtract for gross profit"]
+    K -->|"no, and none is"| X["Says so plainly, and offers<br/>what it can answer"]
+
+    P --> E["THE ENGINE CALCULATES<br/>exact decimals,<br/>your approved rules applied"]
+    M[("What you approved<br/>when you loaded the file")] --> E
+    E --> A["Your answer<br/>figure, table, chart<br/>the ASC rule behind it<br/>and anything still pending"]
+
+    classDef you fill:#fff4e0,stroke:#d68910,color:#7e5109
+    classDef engine fill:#e8f6ec,stroke:#1e8449,color:#145a32
+    classDef model fill:#eaf2fb,stroke:#2471a3,color:#1a5276
+    classDef refuse fill:#fdeaea,stroke:#c0392b,color:#7b241c
+    classDef store fill:#f4ecf7,stroke:#7d3c98,color:#4a235a
+    class Q you
+    class E,A engine
+    class P model
+    class X refuse
+    class M store
+```
+
+**Read the colours:** green is deterministic code, orange is where you decide, blue
+is the only place a language model appears, red is a refusal.
+
+Notice what the model does *not* do. It never touches a row, never produces a figure,
+and never chooses a total. It picks the shape of the calculation and hands it to the
+engine, which computes it from your data with your approved rules applied. An answer
+that came via the model is therefore as reproducible as one that did not — and with
+no model connected, the system answers less rather than answering worse.
 
 ---
 
@@ -499,32 +585,12 @@ Foundation. The raw extracted book text is not in this repository.
 
 ---
 
-## What is verified, and what is not
+## Scope
 
-**Verified.** 333 tests on Python 3.11 and 3.14, with expected values computed by
-hand from the standard rather than read back off the implementation: exact-decimal
-behaviour, allocation residuals, FIFO/LIFO/average, declining balance flooring at
-salvage, the ASC 360 undiscounted screen, EPS antidilution sequencing, cash flow
-tie-out, statement articulation, the ASC 740 threshold-not-weighting rule, row-rule
-impact, plan validation and formula sandboxing, routing stability, diagram generation.
-
-**Not verified.**
-
-- **24 of 77 ASC citations are marked unverified** — their substance came from the
-  reference pack, but the paragraph numbers are unconfirmed against the published
-  Codification. They render with an `UNVERIFIED` marker. No computation may cite an
-  unverified paragraph; a test enforces that. Only row rules may.
-- **The optional model layer has not been run against a live endpoint.** Plan
-  parsing, validation, execution and sandboxing are tested with realistic replies.
-  How reliably a given model emits *valid* plans is unmeasured.
-- **Two row rules overlap.** `gift_card_sales` and `gift_card_structural` can match
-  the same lines; approving both would double-count. Nothing detects this yet.
-- **The worked industry figures above are illustrations**, constructed to show the
-  size and direction of each error. They are not computed from a client file.
-
-**Scope.** This is study and reference apparatus, not accounting authority. *Wiley
-GAAP 2020* predates later ASUs — check effective dates. For a conclusion that
-matters, read the ASC paragraph itself; the citations tell you which one.
+This is study and reference apparatus, **not accounting authority**. The reference
+pack derives from a 2020 text and predates later ASUs — check effective dates. For a
+conclusion that matters, read the ASC paragraph itself; the citations tell you which
+one.
 
 ---
 
