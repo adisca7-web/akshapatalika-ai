@@ -22,6 +22,8 @@ data = ["pandas>=2.0", "matplotlib>=3.7"]
 # suitable interpreter. Install it in a dedicated 3.11 environment.
 pandasai = ["pandasai>=3.0.0"]
 dev = ["pytest>=7.0"]
+# Everything the Streamlit app needs, in one install.
+app = ["pandas>=2.0", "matplotlib>=3.7", "streamlit>=1.30", "openpyxl>=3.1"]
 
 [tool.setuptools.packages.find]
 include = ["gaapai*"]
