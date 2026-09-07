@@ -13,7 +13,7 @@ from decimal import Decimal
 
 import gaapai
 from gaapai import money
-from gaapai.adapters import pandasai_bridge as bridge
+from gaapai.adapters import toolblock as bridge
 from gaapai.diagrams import mermaid
 from gaapai.router import Router, route
 from gaapai.skills import leases, ppe, revenue, statements
@@ -140,12 +140,8 @@ def demo_reference():
         print(f"    ASC {ind['primary']:<5} {ind['title']}")
 
 
-def demo_pandasai():
-    banner("8. PANDASAI BRIDGE -- what the code generator is shown")
-    print(f"  PandasAI importable here: {bridge.available()}")
-    if not bridge.available():
-        print(f"  reason: {bridge.import_error()}")
-        print("  (PandasAI 3.0 pins python <3.12; the kernel has no such pin)")
+def demo_toolblock():
+    banner("8. TOOL BLOCK -- what a code-generating model is shown")
     block = bridge.tool_descriptions(["revenue"])
     print()
     print("  Tool block injected into the prompt (revenue skill only):")
@@ -170,7 +166,7 @@ def main() -> int:
     impair = demo_impairment()
     demo_diagrams(alloc, lease_class, impair)
     demo_reference()
-    demo_pandasai()
+    demo_toolblock()
 
     banner("DONE")
     return 0

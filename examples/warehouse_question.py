@@ -9,7 +9,7 @@ knowing whether five years of it are comparable.
 
 from __future__ import annotations
 
-from gaapai.adapters import pandasai_bridge as bridge
+from gaapai.adapters import toolblock as bridge
 from gaapai.router import Router, route
 from gaapai.semantics import Concept, plan_aggregation
 
@@ -71,20 +71,18 @@ def main() -> int:
     print(plan.render())
 
     # ------------------------------------------------------------------
-    banner(4, "Inject it into the code-generation prompt", "bridge -> PandasAI")
+    banner(4, "Inject it into the code-generation prompt", "gaapai.adapters")
     contract = bridge.aggregation_contract(columns=WAREHOUSE_COLUMNS, industry="film")
     tools = bridge.tool_descriptions(["revenue"])
     print(f"  GAAP policy .............. {len(bridge.GAAP_POLICY):>6,} chars")
     print(f"  Aggregation contract ..... {len(contract):>6,} chars")
     print(f"  Vetted tool signatures ... {len(tools):>6,} chars")
     print()
-    print("  All three go into Agent(description=...) and the skills manager.")
-    print(f"  PandasAI importable here: {bridge.available()}")
-    if not bridge.available():
-        print("    -> PandasAI 3.0 pins python <3.12; steps 5-6 need a 3.11 env.")
+    print("  All three go into the system message of whichever model writes")
+    print("  the query -- they are plain strings, bound to no framework.")
 
     # ------------------------------------------------------------------
-    banner(5, "Generate and execute SQL", "PandasAI")
+    banner(5, "Generate and execute the query", "any code-generating model")
     print("  Without the contract, the model writes:")
     print()
     print("      SELECT fiscal_year, SUM(ultimate_revenue)")

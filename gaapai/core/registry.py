@@ -9,7 +9,7 @@ Why a registry rather than just calling functions: three consumers need to see
 the same catalog, and they must not drift apart.
 
 1. The router matches a natural-language question to a subskill.
-2. The PandasAI bridge exposes each subskill to the code generator as a callable
+2. The tool block exposes each subskill to a code-generating model as a callable
    tool, so the model composes vetted primitives instead of inventing arithmetic.
 3. The documentation and diagram generators render the catalog for humans.
 
@@ -69,16 +69,16 @@ class SubSkill:
     def describe(self) -> str:
         """The docstring *body* handed to the code-generating model.
 
-        Deliberately excludes the signature and the triple quotes. PandasAI's
-        ``SkillType.__str__`` already emits::
+        Deliberately excludes the signature and the triple quotes. A tool
+        renderer typically emits::
 
             <function>
             def name(args) -> ret:
                 \"\"\"{description}\"\"\"
             </function>
 
-        so returning a full docstring here produces a doubled signature and
-        nested quotes in the prompt. Callers that need the whole block use
+        so returning a full docstring here would produce a doubled signature
+        and nested quotes in the prompt. Callers that need the whole block use
         :meth:`as_function_block`.
         """
         lines = [self.summary]
@@ -97,10 +97,10 @@ class SubSkill:
         return "\n".join(lines)
 
     def as_function_block(self) -> str:
-        """The complete ``<function>`` block, byte-identical to PandasAI's.
+        """The complete ``<function>`` block as a prompt would carry it.
 
-        Lets the prompt be inspected on an interpreter where PandasAI cannot be
-        installed, without the preview drifting from what is actually injected.
+        Lets the tool block be inspected and diffed in a test, so what the model
+        sees never drifts from what the catalog declares.
         """
         return (f'<function>\ndef {self.signature}:\n'
                 f'    """{self.describe()}"""\n</function>')

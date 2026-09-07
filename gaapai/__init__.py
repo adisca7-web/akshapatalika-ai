@@ -17,7 +17,7 @@ Two layers sit on top of this package:
 * ``skills/gaap-accounting`` -- the reference knowledge pack distilled from
   *Wiley GAAP 2020*: 64 ASC topic chapters and 20 specialized industry regimes.
   That layer answers "what does the standard require".
-* the PandasAI adapter -- exposes the subskills below as callable tools to a
+* the tool block -- exposes the subskills below as callable tools to a
   code-generating model, so generated code composes vetted primitives instead
   of inventing formulas.
 

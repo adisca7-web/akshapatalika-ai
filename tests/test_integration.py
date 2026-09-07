@@ -1,4 +1,4 @@
-"""Router, diagram, and PandasAI-bridge verification."""
+"""Router, diagram, and tool-block verification."""
 
 from __future__ import annotations
 
@@ -8,7 +8,7 @@ import pytest
 
 import gaapai
 from gaapai import money
-from gaapai.adapters import pandasai_bridge as bridge
+from gaapai.adapters import toolblock as bridge
 from gaapai.diagrams import mermaid
 from gaapai.router import Router, route
 from gaapai.skills import cashflow, leases, ppe, revenue
@@ -240,11 +240,11 @@ def test_diagram_labels_are_escaped():
 
 
 # ---------------------------------------------------------------------------
-# PandasAI bridge
+# Tool block
 # ---------------------------------------------------------------------------
 
 
-def test_tool_descriptions_render_without_pandasai():
+def test_tool_descriptions_render():
     """The tool block must be inspectable on any interpreter."""
     block = bridge.tool_descriptions()
     assert "<function>" in block
@@ -274,73 +274,3 @@ def test_policy_states_the_hard_rules():
     assert "floating point" in p
     assert "verify_trial_balance" in p
 
-
-def test_build_agent_fails_clearly_without_pandasai():
-    if bridge.available():
-        pytest.skip("PandasAI is importable here")
-    with pytest.raises(RuntimeError, match=r"3\.12"):
-        bridge.build_agent(None)
-
-
-# ---------------------------------------------------------------------------
-# Live PandasAI integration (skipped where PandasAI cannot be installed)
-# ---------------------------------------------------------------------------
-
-pandasai_only = pytest.mark.skipif(
-    not bridge.available(), reason="PandasAI not importable on this interpreter"
-)
-
-
-@pandasai_only
-def test_kernel_skills_register_into_pandasai():
-    from pandasai.ee.skills.manager import SkillsManager
-
-    registered = bridge.register_skills()
-    names = {s.name for s in SkillsManager.get_skills()}
-    assert len(registered) == len(gaapai.REGISTRY.subskills())
-    for sub in gaapai.REGISTRY.subskills():
-        assert sub.name in names, sub.qualified_name
-
-
-@pandasai_only
-def test_preview_matches_pandasai_byte_for_byte():
-    """tool_descriptions() must equal what PandasAI actually injects.
-
-    The preview exists so the prompt can be inspected on an interpreter where
-    PandasAI will not install. If the two drift, the preview is worse than
-    useless -- it is confidently wrong about what the model sees.
-    """
-    from pandasai.ee.skills.manager import SkillsManager
-
-    bridge.register_skills()
-    real = {s.name: str(s) for s in SkillsManager.get_skills()}
-    for sub in gaapai.REGISTRY.subskills():
-        assert sub.as_function_block() == real[sub.name], sub.qualified_name
-
-
-@pandasai_only
-def test_agent_carries_policy_and_contract():
-    pd = pytest.importorskip("pandas")
-    df = pd.DataFrame({
-        "fiscal_year": [2021, 2022],
-        "ultimate_revenue": [9, 9],
-        "theatrical_revenue": [100, 120],
-        "distributor_discounts": [5, 6],
-    })
-    agent = bridge.build_agent(df, industry="film")
-    description = agent._state.memory.agent_description
-
-    assert len(agent._state.skills) == len(gaapai.REGISTRY.subskills())
-    for token in ["NEVER compute", "ASC 926", "ultimate_revenue", "FORBIDDEN"]:
-        assert token in description, token
-
-
-@pandasai_only
-def test_agent_industry_changes_the_contract():
-    pd = pytest.importorskip("pandas")
-    df = pd.DataFrame({"fiscal_year": [2021], "written_premium": [1],
-                       "earned_premium": [1]})
-    film = bridge.build_agent(df, industry="film")._state.memory.agent_description
-    ins = bridge.build_agent(df, industry="insurance")._state.memory.agent_description
-    assert "ASC 944" in ins and "ASC 944" not in film
-    assert "written_premium" in ins
