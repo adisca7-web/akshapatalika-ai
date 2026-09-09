@@ -44,8 +44,18 @@ from typing import Any, Dict, List, Optional, Tuple
 from . import charts
 from .semantics import Concept
 
-__all__ = ["QueryPlan", "Step", "Output", "PlanError", "PlanResult",
-           "execute", "parse_plan", "extract_plan", "OPS", "describe_for_model"]
+__all__ = [
+    "OPS",
+    "Output",
+    "PlanError",
+    "PlanResult",
+    "QueryPlan",
+    "Step",
+    "describe_for_model",
+    "execute",
+    "extract_plan",
+    "parse_plan",
+]
 
 
 class PlanError(ValueError):
@@ -491,7 +501,6 @@ def _metric_by_period(df: Any, columns: List[str], revenue_result: Any, by: str)
 def _top(df: Any, aggregation_plan: Any, dimension: str, n: int):
     import pandas as pd
 
-    from . import ask as ask_mod
     from .evaluate import choose_amount_basis, rows_from_frame
 
     pattern = (r"(?i)(email|customer|billing[ _]?name)" if dimension == "customer"

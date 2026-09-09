@@ -14,10 +14,10 @@ that amortises over 360 periods does not accumulate 360 rounding errors.
 from __future__ import annotations
 
 from dataclasses import dataclass
-from decimal import Decimal, ROUND_HALF_UP, ROUND_HALF_EVEN, localcontext
+from decimal import ROUND_HALF_UP, Decimal, localcontext
 from typing import Iterable, Union
 
-__all__ = ["Money", "D", "money", "ZERO", "quantize", "allocate"]
+__all__ = ["ZERO", "D", "Money", "allocate", "money", "quantize"]
 
 Numeric = Union["Money", Decimal, int, str, float]
 

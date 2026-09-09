@@ -28,3 +28,29 @@ include = ["gaapai*"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-q"
+
+[tool.ruff]
+# The kernel supports Python 3.9, so `Dict`/`Optional` under
+# `from __future__ import annotations` are deliberate, not legacy. The pyupgrade
+# rules that want PEP 585/604 syntax are therefore off: they would be wrong here.
+target-version = "py39"
+line-length = 88
+extend-exclude = ["extraction", "vendor", "skills"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "SIM", "RUF"]
+ignore = [
+  "E501",     # line length is enforced by review, not by a hard failure
+  "B008",     # function call in default argument -- used deliberately for Money
+  "SIM108",   # ternary is not always clearer than if/else
+  "RUF001",   # ambiguous unicode: the docs use en dashes on purpose
+  "RUF002",
+  "RUF003",
+  "RUF005",   # `a + b` on lists reads fine and is clearer than unpacking here
+  "SIM105",   # an explicit try/except/pass documents *what* is being ignored
+  "SIM102",   # the nested conditions are separate concerns, deliberately apart
+]
+
+[tool.ruff.lint.per-file-ignores]
+# Tests reach into private helpers on purpose to assert internal invariants.
+"tests/*" = ["E402", "SLF001"]

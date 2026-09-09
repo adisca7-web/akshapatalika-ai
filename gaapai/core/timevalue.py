@@ -10,17 +10,17 @@ errors of a few percent.
 from __future__ import annotations
 
 from decimal import Decimal, localcontext
-from typing import Iterable, List, Sequence, Tuple
+from typing import List, Sequence
 
-from .money import D, Money, WORKING_PRECISION
+from .money import WORKING_PRECISION, D, Money
 
 __all__ = [
     "discount_factor",
-    "present_value",
-    "pv_annuity",
+    "effective_interest_schedule",
     "implicit_rate",
     "periodic_rate",
-    "effective_interest_schedule",
+    "present_value",
+    "pv_annuity",
 ]
 
 

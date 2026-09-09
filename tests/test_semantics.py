@@ -11,14 +11,13 @@ import pytest
 
 from gaapai.adapters import aggregation_contract
 from gaapai.semantics import (
-    Concept,
     PROFILES,
+    Concept,
     bind_columns,
     industries,
     plan_aggregation,
     profile_for,
 )
-
 
 # ---------------------------------------------------------------------------
 # Column binding
@@ -397,7 +396,7 @@ def test_conditional_contributions_are_excluded_entirely():
     rule = next(r for r in prof.row_rules if r.name == "conditional_contributions")
     assert rule.becomes == Concept.FORBIDDEN
     assert rule.severity == "must"
-    assert "958-605-25-5A" == rule.citation
+    assert rule.citation == "958-605-25-5A"
 
 
 def test_row_rules_reach_the_contract_for_their_industry():

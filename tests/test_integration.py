@@ -13,7 +13,6 @@ from gaapai.diagrams import mermaid
 from gaapai.router import Router, route
 from gaapai.skills import cashflow, leases, ppe, revenue
 
-
 # ---------------------------------------------------------------------------
 # Router
 # ---------------------------------------------------------------------------

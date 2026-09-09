@@ -16,8 +16,12 @@ from ..core.money import Money, quantize
 from ..core.registry import REGISTRY
 
 __all__ = [
-    "five_step_diagram", "lease_classification_diagram", "impairment_diagram",
-    "allocation_diagram", "cash_flow_diagram", "skill_map",
+    "allocation_diagram",
+    "cash_flow_diagram",
+    "five_step_diagram",
+    "impairment_diagram",
+    "lease_classification_diagram",
+    "skill_map",
 ]
 
 # Mermaid class definitions reused across diagrams. Colours are chosen to read

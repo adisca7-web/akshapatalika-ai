@@ -6,13 +6,11 @@ from decimal import Decimal
 
 import pytest
 
-from gaapai.assumptions import (Assumptions, is_assumption_statement,
-                                parse_assumptions)
+from gaapai.assumptions import Assumptions, is_assumption_statement, parse_assumptions
 
 pd = pytest.importorskip("pandas")
 
-from gaapai import ask, semantics  # noqa: E402
-
+from gaapai import ask, semantics
 
 # ---------------------------------------------------------------------------
 # Parsing

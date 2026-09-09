@@ -21,19 +21,34 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass, field
 from decimal import Decimal
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, List, Optional, Tuple
 
 from . import charts
 from .assumptions import Assumptions, is_assumption_statement, parse_assumptions
-from .evaluate import (RuleImpact, choose_amount_basis, evaluate_row_rules,
-                       rows_from_frame)
+from .evaluate import (
+    RuleImpact,
+    choose_amount_basis,
+    evaluate_row_rules,
+    rows_from_frame,
+)
 from .semantics import AggregationPlan, Concept
 
-__all__ = ["Answer", "RevenueResult", "compute_revenue", "answer",
-           "friendly_rule_name", "EXAMPLE_QUESTIONS", "column_profile",
-           "important_columns", "sum_without_double_counting",
-           "detect_chart", "chart_only", "CHART_KINDS", "profitability",
-           "Assumptions"]
+__all__ = [
+    "CHART_KINDS",
+    "EXAMPLE_QUESTIONS",
+    "Answer",
+    "Assumptions",
+    "RevenueResult",
+    "answer",
+    "chart_only",
+    "column_profile",
+    "compute_revenue",
+    "detect_chart",
+    "friendly_rule_name",
+    "important_columns",
+    "profitability",
+    "sum_without_double_counting",
+]
 
 
 EXAMPLE_QUESTIONS = [

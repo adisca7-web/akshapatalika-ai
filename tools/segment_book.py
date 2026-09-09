@@ -102,7 +102,6 @@ def main() -> int:
     #   2. a section banner (Perspective and Issues) follows within a few lines,
     #      because titles wrap but the banner always comes straight after;
     #   3. openings appear in ToC order, so the scan never looks backwards.
-    HEAD = re.compile(r"^\s*(?:\d{1,2}\s+)?ASC\s+(\d{3}[a-z]?s?)\s*(.*)$")
 
     def banner_distance(i: int, span: int = 10) -> int:
         for d in range(span):
@@ -277,8 +276,8 @@ def main() -> int:
         """
         terms = []
         try:
-            start = next(i for i, l in enumerate(block_lines)
-                         if l.strip().upper().startswith("DEFINITIONS OF TERMS"))
+            start = next(i for i, line in enumerate(block_lines)
+                         if line.strip().upper().startswith("DEFINITIONS OF TERMS"))
         except StopIteration:
             return terms
         for i in range(start + 1, min(start + 900, len(block_lines))):
@@ -297,7 +296,7 @@ def main() -> int:
             if not (1 <= len(words) <= 8):
                 continue
             nxt = block_lines[i + 1].strip() if i + 1 < len(block_lines) else ""
-            if len(nxt) > 25 and nxt[0].isupper() or (nxt and nxt[0].islower()):
+            if (len(nxt) > 25 and nxt[0].isupper()) or (nxt and nxt[0].islower()):
                 terms.append(s)
         out, seen = [], set()
         for t in terms:

@@ -8,7 +8,7 @@ import pytest
 
 pd = pytest.importorskip("pandas")
 
-from gaapai import ask, semantics  # noqa: E402
+from gaapai import ask, semantics
 
 
 def _frame():

@@ -8,8 +8,7 @@ import pytest
 
 from gaapai import evaluate, semantics
 from gaapai.core import asc
-from gaapai.entity import EntityProfile, OPEN_QUESTIONS
-
+from gaapai.entity import OPEN_QUESTIONS, EntityProfile
 
 # ---------------------------------------------------------------------------
 # Blank handling -- the bug that made every permissive rule match every row

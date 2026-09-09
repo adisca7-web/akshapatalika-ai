@@ -21,6 +21,10 @@ from .mermaid import (
 )
 
 __all__ = [
-    "five_step_diagram", "lease_classification_diagram", "impairment_diagram",
-    "allocation_diagram", "cash_flow_diagram", "skill_map",
+    "allocation_diagram",
+    "cash_flow_diagram",
+    "five_step_diagram",
+    "impairment_diagram",
+    "lease_classification_diagram",
+    "skill_map",
 ]

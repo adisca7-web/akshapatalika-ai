@@ -24,8 +24,16 @@ import re
 from dataclasses import dataclass, field
 from typing import Dict, List, Optional
 
-__all__ = ["ChartKind", "CHARTS", "chart_names", "detect", "get", "describe_for_model",
-           "caveat_for", "is_known"]
+__all__ = [
+    "CHARTS",
+    "ChartKind",
+    "caveat_for",
+    "chart_names",
+    "describe_for_model",
+    "detect",
+    "get",
+    "is_known",
+]
 
 
 @dataclass(frozen=True)

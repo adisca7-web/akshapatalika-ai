@@ -23,7 +23,7 @@ from typing import Dict, List, Optional, Sequence
 
 from .core.registry import REGISTRY, SubSkill
 
-__all__ = ["Route", "Router", "route", "default_pack_path"]
+__all__ = ["Route", "Router", "default_pack_path", "route"]
 
 _ASC_IN_TEXT = re.compile(r"\basc\s*(\d{3})\b", re.IGNORECASE)
 _TOKEN = re.compile(r"[a-z0-9]+")

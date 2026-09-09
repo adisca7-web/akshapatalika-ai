@@ -31,7 +31,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
-__all__ = ["EntityProfile", "RuleDecision", "DEFAULT_DIR", "load", "save", "list_profiles"]
+__all__ = ["DEFAULT_DIR", "EntityProfile", "RuleDecision", "list_profiles", "load", "save"]
 
 DEFAULT_DIR = Path.home() / ".gaapai" / "entities"
 

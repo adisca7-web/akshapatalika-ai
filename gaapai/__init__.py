@@ -29,6 +29,7 @@ for a general ledger.
 
 from __future__ import annotations
 
+from . import skills as _skills  # noqa: F401 -- populates REGISTRY on import
 from .core import (
     ASC,
     REGISTRY,
@@ -48,16 +49,31 @@ from .core import (
     quantize,
     subskill,
 )
-from . import skills as _skills  # noqa: F401 -- populates REGISTRY on import
 
 __version__ = "0.1.0"
 
 __all__ = [
-    "ASC", "Citation", "cite", "all_citations",
-    "Money", "money", "quantize", "allocate",
-    "GaapResult", "Step", "Assumption", "Check", "Severity",
-    "REGISTRY", "SubSkill", "subskill", "SkillNotFound",
-    "resolve", "catalog", "coverage", "__version__",
+    "ASC",
+    "REGISTRY",
+    "Assumption",
+    "Check",
+    "Citation",
+    "GaapResult",
+    "Money",
+    "Severity",
+    "SkillNotFound",
+    "Step",
+    "SubSkill",
+    "__version__",
+    "all_citations",
+    "allocate",
+    "catalog",
+    "cite",
+    "coverage",
+    "money",
+    "quantize",
+    "resolve",
+    "subskill",
 ]
 
 

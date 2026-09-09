@@ -24,7 +24,7 @@ from __future__ import annotations
 import json
 import re
 import sys
-from collections import Counter, OrderedDict
+from collections import OrderedDict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]

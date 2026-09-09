@@ -33,8 +33,10 @@ from ..core.evidence import GaapResult
 from ..core.registry import REGISTRY, SubSkill
 
 __all__ = [
-    "GAAP_POLICY", "tool_descriptions", "aggregation_contract",
+    "GAAP_POLICY",
+    "aggregation_contract",
     "gaap_skill_functions",
+    "tool_descriptions",
 ]
 
 

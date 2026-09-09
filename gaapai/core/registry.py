@@ -25,7 +25,7 @@ from typing import Any, Callable, Dict, Iterable, List, Optional
 from .asc import Citation
 from .evidence import GaapResult
 
-__all__ = ["SubSkill", "Skill", "SkillRegistry", "REGISTRY", "subskill", "SkillNotFound"]
+__all__ = ["REGISTRY", "Skill", "SkillNotFound", "SkillRegistry", "SubSkill", "subskill"]
 
 
 class SkillNotFound(LookupError):

@@ -34,18 +34,18 @@ ROOT = Path(__file__).resolve().parent.parent
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-import gaapai                                        # noqa: E402
-from gaapai import ask as ask_mod                    # noqa: E402
-from gaapai.assumptions import Assumptions           # noqa: E402
-from gaapai import entity as entity_mod              # noqa: E402
-from gaapai import evaluate, semantics               # noqa: E402
-from gaapai import llm as llm_mod                    # noqa: E402
-from gaapai import charts as charts_mod              # noqa: E402
-from gaapai import plan as plan_mod                  # noqa: E402
-from gaapai.core import asc                          # noqa: E402
-from gaapai.diagrams import mermaid                  # noqa: E402
-from gaapai.router import route                      # noqa: E402
-from gaapai.semantics import Concept                 # noqa: E402
+import gaapai  # noqa: E402
+from gaapai import ask as ask_mod  # noqa: E402
+from gaapai import charts as charts_mod  # noqa: E402
+from gaapai import entity as entity_mod  # noqa: E402
+from gaapai import evaluate, semantics  # noqa: E402
+from gaapai import llm as llm_mod  # noqa: E402
+from gaapai import plan as plan_mod  # noqa: E402
+from gaapai.assumptions import Assumptions  # noqa: E402
+from gaapai.core import asc  # noqa: E402
+from gaapai.diagrams import mermaid  # noqa: E402
+from gaapai.router import route  # noqa: E402
+from gaapai.semantics import Concept  # noqa: E402
 
 APP = "Akshapatalika AI"
 

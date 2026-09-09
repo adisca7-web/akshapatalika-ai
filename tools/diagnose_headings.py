@@ -56,5 +56,5 @@ for i in range(TOC_END, n):
     # Only show plausible openings: heading line is mostly a title, not prose.
     if len(rest) > 60:
         continue
-    nxt = " | ".join(l.strip() for l in lines[i + 1:i + 4] if l.strip())[:56]
+    nxt = " | ".join(x.strip() for x in lines[i + 1:i + 4] if x.strip())[:56]
     print(f"{i:>7} {asc:<6} {d:>8}  {rest[:34]:<34} >> {nxt}")

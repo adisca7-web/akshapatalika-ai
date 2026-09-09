@@ -6,12 +6,13 @@ from decimal import Decimal
 
 import pytest
 
-from gaapai import charts, plan as plan_mod
+from gaapai import charts
+from gaapai import plan as plan_mod
 from gaapai.plan import PlanError
 
 pd = pytest.importorskip("pandas")
 
-from gaapai import semantics  # noqa: E402
+from gaapai import semantics
 
 
 def _frame():

@@ -23,11 +23,11 @@ from .asc import Citation
 from .money import Money, quantize
 
 __all__ = [
-    "Step",
     "Assumption",
     "Check",
     "GaapResult",
     "Severity",
+    "Step",
 ]
 
 
@@ -133,7 +133,8 @@ class GaapResult:
 
     # -- building -------------------------------------------------------
 
-    def step(self, label: str, value: Any, formula: str = None, note: str = None) -> "GaapResult":
+    def step(self, label: str, value: Any, formula: Optional[str] = None,
+             note: Optional[str] = None) -> "GaapResult":
         self.steps.append(Step(label, value, formula, note))
         return self
 

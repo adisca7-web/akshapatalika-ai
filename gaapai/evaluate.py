@@ -33,8 +33,12 @@ from .core import asc
 from .semantics import AggregationPlan, Concept, RowRule
 
 __all__ = [
-    "RuleImpact", "AmountBasis", "evaluate_row_rules", "rows_from_frame",
-    "choose_amount_basis", "citation_status",
+    "AmountBasis",
+    "RuleImpact",
+    "choose_amount_basis",
+    "citation_status",
+    "evaluate_row_rules",
+    "rows_from_frame",
 ]
 
 CANDIDATE = "candidate"
@@ -60,7 +64,7 @@ def is_blank(value: Any) -> bool:
         return True
     # NaN is the only value not equal to itself; catches float and numpy nan
     # without importing numpy.
-    if value != value:  # noqa: PLR0124
+    if value != value:
         return True
     return str(value).strip().lower() in _BLANK_TOKENS
 

@@ -1,5 +1,7 @@
 # Akshapatalika AI
 
+[![CI](https://github.com/adisca7-web/akshapatalika-ai/actions/workflows/ci.yml/badge.svg)](https://github.com/adisca7-web/akshapatalika-ai/actions/workflows/ci.yml)
+
 **An accounting layer for your data. Because not every number is revenue.**
 
 Point it at a CSV, a spreadsheet, or a database query. It reads the columns the way
@@ -483,10 +485,31 @@ Your key is held in memory for the session only and never written to disk.
 
 ## For developers
 
-```bash
-pip install -e ".[data,dev]"
-pytest                            # 333 tests
+One command builds a locked, reproducible environment. It installs the right
+Python via [uv](https://docs.astral.sh/uv/), creates `.venv` from `uv.lock`, and
+runs the suite to prove the environment works before you change anything:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts\setup.ps1   # Windows
 ```
+
+```bash
+bash scripts/setup.sh                                        # macOS, Linux
+```
+
+<details>
+<summary>Or by hand</summary>
+
+```bash
+uv sync --extra app --extra dev    # exact versions from uv.lock
+uv run pytest                      # 364 tests
+```
+</details>
+
+CI runs the suite on Python 3.11 and 3.14, on both Ubuntu and Windows, plus ruff,
+a reference-pack integrity check, and a check that the app still imports.
+[CONTRIBUTING.md](CONTRIBUTING.md) has the house rules — exact-decimal money, a
+kernel that takes no dependencies, and never inventing a citation.
 
 The kernel has **zero dependencies** — exact money, citations, workpapers, routing
 and diagrams all run on the standard library. Pandas enters at the adapter boundary.
@@ -534,7 +557,7 @@ gaapai/
 
 devapp/app.py             the Streamlit app
 skills/gaap-accounting/   the reference pack
-tests/                    333 tests
+tests/                    364 tests
 ```
 
 ### Row-level rules

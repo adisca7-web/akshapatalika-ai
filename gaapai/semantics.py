@@ -28,9 +28,17 @@ from dataclasses import dataclass, field
 from typing import Dict, List, Optional, Sequence
 
 __all__ = [
-    "Concept", "ColumnBinding", "AggregationRule", "RowRule", "IndustryProfile",
-    "AggregationPlan", "PROFILES", "bind_columns", "plan_aggregation",
-    "industries", "profile_for",
+    "PROFILES",
+    "AggregationPlan",
+    "AggregationRule",
+    "ColumnBinding",
+    "Concept",
+    "IndustryProfile",
+    "RowRule",
+    "bind_columns",
+    "industries",
+    "plan_aggregation",
+    "profile_for",
 ]
 
 

@@ -17,10 +17,10 @@ requirement, which is the same thing a workpaper reference column holds.
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import Dict, List, Optional
 
-__all__ = ["Citation", "ASC", "cite", "topic_of", "all_citations"]
+__all__ = ["ASC", "Citation", "all_citations", "cite", "topic_of"]
 
 
 @dataclass(frozen=True)

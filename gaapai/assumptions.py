@@ -27,7 +27,7 @@ from dataclasses import dataclass, field
 from decimal import Decimal, InvalidOperation
 from typing import List, Optional, Tuple
 
-__all__ = ["Assumptions", "parse_assumptions", "is_assumption_statement"]
+__all__ = ["Assumptions", "is_assumption_statement", "parse_assumptions"]
 
 
 def _pct(raw: str) -> Optional[Decimal]:
@@ -164,7 +164,7 @@ def is_assumption_statement(text: str) -> bool:
     was enough for the revenue intent to claim it and answer with total revenue
     — an unrelated figure presented as if it were the reply.
     """
-    merged, changes = parse_assumptions(text)
+    _, changes = parse_assumptions(text)
     if not changes:
         return False
     return not _QUESTION_HINT.search((text or "").lower())
